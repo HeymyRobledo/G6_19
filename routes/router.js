@@ -9,7 +9,7 @@ router
   //****PASAJERO EJEMPLO****
   .get("/pasajero/getall", PasajeroController.getAll)
   .get("/pasajero/getone/:codigopasajero", PasajeroController.getOne)
-  .post("/pasajero/insertar/:codigopasajero", PasajeroController.post)
+  .post("/pasajero/insertar", PasajeroController.post)
   .put("/pasajero/actualizar/:codigopasajero", PasajeroController.put)
   .delete("/pasajero/eliminar/:codigopasajero", PasajeroController.delete)
   .use(PasajeroController.error404);
